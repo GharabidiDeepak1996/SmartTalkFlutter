@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1009390034668",
+    "firebase_url": "https://smarttalk-d4bb8.firebaseio.com",
+    "project_id": "smarttalk-d4bb8",
+    "storage_bucket": "smarttalk-d4bb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009390034668:android:b1de2f05a0fbdb7c270fc9",
+        "android_client_info": {
+          "package_name": "com.example.smarttalkflutterdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009390034668-rrptctahnsobpdpmevd5ni3fnbei27b2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smarttalkflutterdemo",
+            "certificate_hash": "51eb7a522373c672e82bda2d77b8591fb591ab5e"
+          }
+        },
+        {
+          "client_id": "1009390034668-804pfke3f52j0bbe2fstdmmnfonih4cg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDhO_w7K5-8Rff729NrwHM3egzXnmcy-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009390034668-804pfke3f52j0bbe2fstdmmnfonih4cg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
