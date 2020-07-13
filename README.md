@@ -11,7 +11,7 @@ A few resources to get you started if this is your first Flutter project:
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-![grab-landing-page](https://media.giphy.com/media/m9iwuAGhkuRcb6aTrF/giphy.gif)
+![grab-landing-page](https://media.giphy.com/media/XHpcwn54hu5eaIoAiy/giphy.gif)
 
 # FEATURES
 
@@ -39,7 +39,7 @@ A few resources to get you started if this is your first Flutter project:
 * Provider
 * Firebase Auth
 * FireStore
-* Bloc pattern
+
 
 
 For help getting started with Flutter, view our

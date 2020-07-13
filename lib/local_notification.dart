@@ -22,6 +22,7 @@ class MyLocalNotificationState extends State<MyLocalNotification>{
     super.initState();
     configLocalNotification();
 registerNotification();
+
   }
   @override
   Widget build(BuildContext context) {
@@ -38,7 +39,7 @@ registerNotification();
     firebaseMessaging.requestNotificationPermissions();
     firebaseMessaging.configure(
         onMessage: (Map<String, dynamic> message) {
-          print('onMessage: $message');
+          print('===>onMessage: $message');
           Platform.isAndroid ? showNotification(message['notification']) : showNotification(message['aps']['alert']);
           return;
         },
@@ -63,12 +64,9 @@ registerNotification();
       priority: Priority.High,
     );
     var iOSPlatformChannelSpecifics = new IOSNotificationDetails();
-    var platformChannelSpecifics =
-    new NotificationDetails(androidPlatformChannelSpecifics, iOSPlatformChannelSpecifics);
-
+    var platformChannelSpecifics = new NotificationDetails(androidPlatformChannelSpecifics, iOSPlatformChannelSpecifics);
 
     await flutterLocalNotificationsPlugin.show(
-        0, message['title'].toString(), message['body'].toString(), platformChannelSpecifics,
-        payload: json.encode(message));
+        0, message['title'].toString(), message['body'].toString(), platformChannelSpecifics,);
   }
 }

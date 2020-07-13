@@ -53,7 +53,7 @@ class MyFirestoreDatabase {
                 });
 
                 Navigator.pushAndRemoveUntil(context, MaterialPageRoute(
-                    builder: (BuildContext context) => HomePageWidget()),
+                    builder: (BuildContext context) => HomePage()),
                         (e) => false);
               });
             } else {
@@ -122,7 +122,7 @@ class MyFirestoreDatabase {
               .setData(user.toJson());
         }
       });
-      Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (BuildContext context) => HomePageWidget()), (e) => false);
+      Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (BuildContext context) => HomePage()), (e) => false);
     });
   }
 
@@ -199,12 +199,13 @@ class MyFirestoreDatabase {
   }
 
   //add conversation messages
-static addMessage({@required String message,@required String senderID,@required String receiverID})async{
+static addMessage({@required String message,@required String senderID,@required String receiverID,@required messageType})async{
     var date = DateFormat("dd-MMM-yyyy").add_jms().format(DateTime.now());
     Map<String, dynamic> chatMessageMap = {
       "sendBy":senderID ,
       "message": message,
       'time': date,
+      'type':messageType,
     };
 
     final List<String> conversationID = <String>[senderID,receiverID];
